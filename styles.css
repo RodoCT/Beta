@@ -341,6 +341,133 @@
     }
 }
 
+.experience {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 80%;
+    margin: auto;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__period {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffff;
+}
+
+.experience__title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffff;
+    margin-top: 15px;
+}
+
+.experience__description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #ffff;
+    margin-top: 15px;
+}
+
+.experience__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffff;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.experience__responsibilities {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.experience__item {
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #ffff;
+}
+
+.experience__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__img {
+    width: 90%;
+    height: auto;
+}
+
+.experience__tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+}
+
+.tool {
+    writing-mode: vertical-rl;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .experience {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container {
+        flex-direction: row-reverse;
+    }
+
+    .experience__img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience {
+        padding-top: 50px;
+    }
+
+    .experience__title{ 
+        font-size: 25px;
+    }
+
+    .tool {
+        font-size: 12px;
+    }
+}
+
 .cards {
     padding-top: 100px;
     display: grid;
