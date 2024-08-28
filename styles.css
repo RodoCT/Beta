@@ -681,11 +681,15 @@
 
     .contact__text {
         max-width: 90%;
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 28px;
+        line-height: 36px;
     }
 
     .contact__buttons {
         gap: 15px;
+    }
+
+    .button {
+        font-size: 13px;
     }
 }
