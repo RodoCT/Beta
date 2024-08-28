@@ -335,7 +335,7 @@
     }
     
     .bx {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .view{
@@ -381,6 +381,11 @@
     margin-top: 15px;
 }
 
+.experience__title a {
+    text-decoration: none;
+    color: #828282;
+}
+
 .experience__description {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -424,8 +429,14 @@
 }
 
 .experience__img {
-    width: 90%;
+    width: 95%;
     height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.experience__img:hover {
+    transform: scale(1.05);
+    opacity: 0.2;
 }
 
 .experience__tools {
@@ -691,5 +702,47 @@
 
     .button {
         font-size: 13px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0 80px;
+    margin: auto;
+    max-width: 80%;
+}
+
+.footer__rights {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffff;
+}
+
+.footer__links {
+    display: flex;
+    gap: 20px;
+}
+
+.link i {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    footer {
+        max-width: 90%;
+        padding: 50px 0 30px;
+    }
+
+    .link__text {
+        display: none; 
+    }
+    
+    .link i {
+        display: inline;
+        font-size: 24px;
     }
 }

@@ -43,17 +43,19 @@
               class="navbar__exit"
             />
           </div>
-          <li><a href="" class="selected">Home</a></li>
-          <li><a href="" class="">About</a></li>
-          <li><a href="" class="">Projects</a></li>
-          <li><a href="" class="">Skills</a></li>
-          <li><a href="" class="">Contact</a></li>
+          <li>
+            <a href="https://rodoct.github.io/Beta/" class="selected">Home</a>
+          </li>
+          <li><a href="#About" class="">About</a></li>
+          <li><a href="#Experience" class="">Experience</a></li>
+          <li><a href="#Projects" class="">Projects</a></li>
+          <li><a href="#Contact" class="">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="content">
-      <section class="section">
+      <section class="section" id="About">
         <div class="info">
           <h2 class="info__title">Hi, It's <span>Rodolfo Cante</span></h2>
           <h3 class="info__subtitle">
@@ -115,11 +117,17 @@
         </div>
       </section>
 
-      <section class="experience">
+      <section class="experience" id="Experience">
         <div class="experience__info">
           <h3 class="experience__period">April 2022 - August 2022</h3>
           <h2 class="experience__title">
-            Website Creation - Acento Vertical, Puebla
+            Website Creation -
+            <a
+              href="https://acentovertical.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acento Vertical</a
+            >, Puebla
           </h2>
           <p class="experience__description">
             Developed a website and managed advertising campaigns to
@@ -143,11 +151,17 @@
           </ul>
         </div>
         <div class="experience__container">
-          <img
-            src="./images/acento-vertical.png"
-            alt="Acento Vertical"
-            class="experience__img"
-          />
+          <a
+            href="https://acentovertical.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/acento-vertical.png"
+              alt="Acento Vertical"
+              class="experience__img"
+            />
+          </a>
           <div class="experience__tools">
             <p class="tool">WordPress</p>
             <p class="tool">Facebook Ads</p>
@@ -156,7 +170,7 @@
         </div>
       </section>
 
-      <section class="cards">
+      <section class="cards" id="Projects">
         <div class="card">
           <div class="card__container">
             <img
@@ -180,8 +194,20 @@
             </p>
           </div>
           <div class="links">
-            <a href="#" class="link">Website &rarr;</a>
-            <a href="#" class="link">Github &rarr;</a>
+            <a
+              href="https://rodoct.github.io/web_project_4_esp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+              >Website &rarr;</a
+            >
+            <a
+              href="https://github.com/RodoCT/web_project_4_esp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+              >Github &rarr;</a
+            >
           </div>
         </div>
 
@@ -208,8 +234,22 @@
             </p>
           </div>
           <div class="links">
-            <a href="#" class="link">Website &rarr;</a>
-            <a href="#" class="link">Github &rarr;</a>
+            <a
+              href="https://rodoct.github.io/web_project_3_esp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+              class="link"
+              >Website &rarr;</a
+            >
+            <a
+              href="https://github.com/RodoCT/web_project_3_esp?tab=readme-ov-file"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+              class="link"
+              >Github &rarr;</a
+            >
           </div>
         </div>
 
@@ -236,35 +276,86 @@
             </p>
           </div>
           <div class="links">
-            <a href="#" class="link">Website &rarr;</a>
-            <a href="#" class="link">Github &rarr;</a>
+            <a
+              href="https://rodoct.github.io/Homepage/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+              >Website &rarr;</a
+            >
+            <a
+              href="https://github.com/RodoCT/Homepage"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+              >Github &rarr;</a
+            >
           </div>
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="Contact">
         <div class="contact__container">
-          <img src="./images/contact.png" alt="bussines">
+          <img src="./images/contact.png" alt="bussines" />
         </div>
         <h2 class="contact__text">Tell me about your next project</h2>
         <div class="contact__buttons">
           <div class="buttons">
-            <i class='bx bx-envelope' style='color:#ffffff' size></i>
-            <a href="" class="button">Email Me</a>
+            <i class="bx bx-envelope" style="color: #ffffff" size></i>
+            <a
+              href="mailto:rodolfocante8@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button"
+              >Email Me</a
+            >
           </div>
           <div class="buttons">
-            <i class='bx bxl-whatsapp' style='color:#ffffff' ></i>
-            <a href="" class="button">WhatsApp</a>
+            <i class="bx bxl-whatsapp" style="color: #ffffff"></i>
+            <a
+              href="https://wa.link/9vtova"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button"
+              >WhatsApp</a
+            >
           </div>
         </div>
       </section>
-
     </main>
 
     <footer>
-      
+      <p class="footer__rights">© 2024 All rights reserved.</p>
+      <div class="footer__links">
+        <a
+          href="https://www.linkedin.com/in/rodolfo-cante-37392a231/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+        >
+          <span class="link__text">LinkedIn</span>
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/RodoCT"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+        >
+          <span class="link__text">Github</span>
+          <i class="bx bxl-github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/canterodolfo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+        >
+          <span class="link__text">Instagram</span>
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
     </footer>
-
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script defer src="script.js"></script>
