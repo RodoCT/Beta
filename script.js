@@ -9,19 +9,22 @@ function toggleMenu() {
 openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
 
-let currentSlide = 0;
+// Text - animation
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-function moveSlide(direction) {
-    const slider = document.querySelector('.slider');
-    const totalSlides = document.querySelectorAll('.slider .card').length;
-
-    currentSlide += direction;
-
-    if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    } else if (currentSlide >= totalSlides) {
-        currentSlide = 0;
-    }
-
-    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
+anime.timeline({loop: true})
+    .add({
+        targets: '.ml3 .letter',
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        duration: 2250,
+        delay: (el, i) => 150 * (i + 1)
+    })
+    .add({
+        targets: '.ml3',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });

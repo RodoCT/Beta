@@ -102,6 +102,10 @@
 @media (max-width: 950px) {
     /* Menu */
 
+    .navbar {
+        max-width: 90%;
+    }
+
     .menu {
       flex-direction: column;
       position: fixed;
@@ -191,7 +195,7 @@
     color: #ffff;
 }
 
-.info__subttile {
+.info__subtitle {
     font-family: 'Lora';
     font-weight: 500;
     font-size: 35px;
@@ -199,8 +203,9 @@
     color: #ffff;
 }
 
-.info__subttile span {
+.info__subtitle span {
     color: #828282;
+    display: inline-block;
 }
 
 .info__description {
@@ -280,6 +285,7 @@
 
 @media (max-width: 1040px) {
     .section {
+        max-width: 90%;
         display: flex;
         flex-direction: column-reverse;
         padding: 0;
@@ -305,12 +311,12 @@
     }
 
     .info__title {
-        font-size: 36px;
+        font-size: 25px;
         line-height: 35px;
     }
 
-    .info__subttile {
-        font-size: 28px;
+    .info__subtitle {
+        font-size: 23px;
     }
 
     .info__description {
@@ -320,7 +326,8 @@
     
     .info__icons {
         margin-top: 10px;
-        gap: 40px;
+        justify-content: space-between;
+        gap: 0;
     }
     
     .info__icons a{
@@ -332,7 +339,7 @@
     }
     
     .view{
-        max-width: 150px;
+        max-width: 100%;
     }
 
     .view__link{
@@ -456,6 +463,7 @@
 
 @media (max-width: 768px) {
     .experience {
+        width: 90%;
         padding-top: 50px;
     }
 
@@ -586,6 +594,7 @@
 
 @media (max-width: 767px) {
     .cards {
+        width: 90%;
         grid-template-columns: 1fr;
         padding-top: 50px;
         gap: 50px;
